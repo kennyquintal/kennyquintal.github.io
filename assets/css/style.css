@@ -29,6 +29,11 @@ body::before {
 }
 
 /** Código personalizado **/
+:root {
+  --blue-text-color: #1956ff;
+  --bluelight-line-color: #0084ff;
+  --blue-bg-color: #0044ff;
+}
 
 .inicio-h1 {
   color:#fff;
@@ -39,6 +44,7 @@ body::before {
   color:#fff;
 }
 
+/* Fin Codigo Perso */
 
 @media (min-width: 1024px) {
   body::before {
@@ -51,7 +57,7 @@ a {
 }
 
 a:hover {
-  color: #1956ff;
+  color: var(--blue-text-color);
   text-decoration: none;
 }
 
@@ -102,8 +108,8 @@ h6 {
 }
 
 #header h2 span {
-  color: #0044ff;
-  border-bottom: 2px solid #0084ff;
+  color: var(--blue-bg-color);
+  border-bottom: 2px solid --bluelight-line-color;
   padding-bottom: 6px;
 }
 
@@ -132,7 +138,7 @@ h6 {
 }
 
 #header .social-links a:hover {
-  background: #0044ff;
+  background: var(--blue-bg-color);
 }
 
 @media (max-width: 992px) {
@@ -250,7 +256,7 @@ h6 {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #18d26e;
+  background-color: var(--bluelight-line-color);
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -394,7 +400,7 @@ section .container {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #4ceb95;
+  background: var(--bluelight-line-color);
   margin: 4px 10px;
 }
 
@@ -414,7 +420,7 @@ section .container {
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #18d26e;
+  color: var(--blue-text-color);
 }
 
 .about-me .content ul {
@@ -435,7 +441,7 @@ section .container {
 .about-me .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #18d26e;
+  color: var(--bluelight-line-color);
   line-height: 0;
 }
 
@@ -466,7 +472,7 @@ section .container {
   font-size: 24px;
   background: rgba(255, 255, 255, 0.1);
   padding: 12px;
-  color: #18d26e;
+  color: var(--bluelight-line-color);
   border-radius: 50px;
   line-height: 0;
 }
@@ -518,7 +524,7 @@ section .container {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #18d26e;
+  background-color: var(--bluelight-line-color);
 }
 
 /*--------------------------------------------------------------
@@ -629,7 +635,7 @@ section .container {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: var(--bluelight-line-color);
 }
 
 /*--------------------------------------------------------------
@@ -656,7 +662,7 @@ section .container {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #18d26e;
+  color: var(--bluelight-line-color);
   margin-bottom: 10px;
 }
 
@@ -689,8 +695,8 @@ section .container {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #18d26e;
-  border: 2px solid #18d26e;
+  background: var(--bluelight-line-color);
+  border: 2px solid var(--bluelight-line-color);
 }
 
 /*--------------------------------------------------------------
@@ -707,7 +713,7 @@ section .container {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #18d26e;
+  background: var(--bluelight-line-color);
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -752,8 +758,8 @@ section .container {
 }
 
 .services .icon-box:hover {
-  background: #18d26e;
-  border-color: #18d26e;
+  background: var(--blue-bg-color);
+  border-color: var(--blue-bg-color);
 }
 
 .services .icon-box:hover .icon {
@@ -761,11 +767,11 @@ section .container {
 }
 
 .services .icon-box:hover .icon i {
-  color: #18d26e;
+  color: var(--bluelight-line-color);
 }
 
 .services .icon-box:hover .icon::before {
-  background: #35e888;
+  background: var(--bluelight-line-color);
 }
 
 .services .icon-box:hover h4 a,
@@ -806,7 +812,7 @@ section .container {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  background: #18d26e;
+  background: var(--blue-bg-color);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -906,7 +912,7 @@ section .container {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #63eda3;
+  color: var(--bluelight-line-color);
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -1000,7 +1006,7 @@ section .container {
 }
 
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: var(--bluelight-line-color);
 }
 
 /*--------------------------------------------------------------
@@ -1015,7 +1021,7 @@ section .container {
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #18d26e;
+  color: var(--bluelight-line-color);
   border-radius: 50%;
   padding: 14px;
   float: left;
@@ -1052,7 +1058,7 @@ section .container {
 }
 
 .contact .info-box .social-links a:hover {
-  color: #18d26e;
+  color: var(--blue-text-color);
 }
 
 .contact .php-email-form {
@@ -1076,7 +1082,7 @@ section .container {
 .contact .php-email-form .sent-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
-  background: #18d26e;
+  background: var(--blue-bg-color);
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1096,7 +1102,7 @@ section .container {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid var(--bluelight-line-color);
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1139,7 +1145,7 @@ section .container {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #18d26e;
+  background: var(--bluelight-line-color);
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1148,7 +1154,7 @@ section .container {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #15bb62;
+  background: var(--blue-bg-color);
 }
 
 @-webkit-keyframes animate-loading {
@@ -1195,7 +1201,7 @@ section .container {
 }
 
 .credits a {
-  color: #18d26e;
+  color: var(--blue-text-color);
   transition: 0.3s;
 }
 
