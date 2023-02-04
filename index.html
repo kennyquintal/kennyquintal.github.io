@@ -35,10 +35,12 @@
   <header id="header">
     <div class="container">
 
-      <h1><a href="index.html" class="inicio-h1">Roger Kenneth Quintal Ojeda</a></h1>
+      <h1><a href="index.html" class="inicio-h1" id="fullName"></a>
+
+      </h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2 class="inicio-h2">Soy un <span>desarrollador de software</span> de Mérida, Yucatán</h2>
+      <h2 class="inicio-h2" id="about-me"> <!--Ingresa a que te dedicas--> </h2>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -75,37 +77,35 @@
 
       <div class="row">
         <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/me.jpg" class="img-fluid" alt="">
+          <img src=" " class="img-fluid" alt="" id="profileIMG">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>FrontEnd Web Developer</h3>
-          <p class="fst-italic">
-            "Un gran artista puede provenir de cualquier parte"
+          <h3 id="profession">
+            <!-- Se inserta codigo desde js -->
+          </h3>
+          <p class="fst-italic" id="slogan">
+            <!-- Se inserta codigo desde js -->
           </p>
           <div class="row">
             <div class="col-lg-6">
               <ul>
                 <!-- <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li> -->
-                <li><i class="bi bi-chevron-right"></i> <strong>Sitio Web:</strong> <span>https://www.kennyquintal.github.io/</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+52 (991) 110 8334</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Correo:</strong> <span>quintalkenny@gmail.com</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Ciudad:</strong> <span>Mérida, Yucatán, México</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Sitio Web:</strong> <span  id="website"></span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Celular:</strong> <span id="phone"></span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Correo:</strong> <span id="email"></span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Ciudad:</strong> <span id="city"></span></li>
               </ul>
             </div>
             <div class="col-lg-6">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span>25</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Titulo:</strong> <span>Ing. Sistemas Comerciales</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponible</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span id="age"></span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Titulo:</strong> <span id="degree"></span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span id="freelance"></span></li>
               </ul>
             </div>
           </div>
-          <p>
-            <li>Conocimientos básicos de Programación Orientada a Objetos, experiencia en desarrollo de diferentes
-            aplicaciones tanto de escritorio, móvil y web, conocimientos en Java SE y Java para Android, desarrollo
-            web con JS, HTML, CSS y Bootstrap.</li> 
-            <li>Especialista en Análisis Tecnológico de Hardware de alto desempeño.</li>
-            <li>Trabajo en Equipo, facilidad de comunicación e interpretación, facilidad de aprendizaje. </li>
+          <p id="introduccion">
+            <!-- Ingresa descripcion de uno mismo -->
           </p>
         </div>
       </div>
@@ -300,69 +300,31 @@
             <h4>Certificado Scrum Fundamentals</h4>
             <p><em>Scrum Study</em></p>
             <h5>2022</h5>
-
           </div>
         </div>
         <div class="col-lg-6">
           <h3 class="resume-title">Experiencia Escolar</h3>
-          <div class="resume-item">
-            <h4>Android Application – Incendios</h4>
-            <p><em>Universidad Latino CEL - Mérida Yucatán</em></p>
+          <div class="resume-item" id="resume-escolar">
+            <h4 id="project"><!-- Proyecto --></h4>
+            <p><em id="university"><!-- Universidad --></em></p>
+            <h5 id="date-university"><!-- Fecha --></h5>
             <p>
-            <ul>
-              <li>Aplicación desarrollada para dispositivos Android versión 8.0 en adelante con el objetivo de 
-                que el usuario que disponga de ella podría reportar en tiempo real incendios que se estén 
-                localizando en determinada región, la aplicación registraba el lugar del incendio desde la 
-                ubicación del usuario y la guardaba en un mapa visible para las personas o autoridades que 
-                pudieran acceder a ella, contaba con sección para cargar fotos de ser necesaria y registrar 
-                las coordenadas en una base de datos para futuros usos </li>
+            <ul id="project-description">
+              <!-- Descripcion -->
                 <p class="fst-italic fw-bold">Tecnologías Usadas</p>
-              <li>Java, API en PHP, MySQL</li>
+              <li id="used-techs"><!-- UsedTechs --> </li>
             </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Desktop Application – Punto de Venta La Bodeguita</h4>
-            <p><em>Universidad Latino CEL - Mérida Yucatán</em></p>
-            <p>
-            <ul>
-              Aplicación para escritorio desarrollada como proyecto escolar para un negocio pequeño que 
-              cumpliera con las necesidades de inventario de productos, catálogo de productos con existencias
-              y precios, registro de ventas, corte de caja y resumen de ventas diarias, semanales y mensuales.
-              <p class="fst-italic fw-bold">Tecnologías Usadas</p>
-              <li>Java SE, Java Swing (Front End), PostgreSQL</li>
-            </ul>
-            </p>
+            </p><br>
           </div>
 
           <h3 class="resume-title">Experiencia Profesional</h3>
-          <div class="resume-item">
-            <h4>Ingeniero Independiente-Contrato por Evento - Técnico</h4>
-            <p><em>Mérida, Yucatán</em></p>
+          <div class="resume-item" id="resume-item">
+            <h4 id="job"><!-- Nombre empleo --></h4>
+            <p><em id="work-place"><!-- Lugar de Trabajo --></em></p>
+            <h5 id="work-date"><!-- Fecha de trabajo --></h5>
             <p>
-            <ul>
-              <li>Mantenimiento preventivo y correctivo a equipos informáticos tales como Laptops, PC de 
-                sobremesa e Impresoras a empresas de grupo Farrera como lo son BMW, Hyundai, Mini, Seminuevos 
-                y para Toyota tanto en la ciudad de Mérida como en viajes a Cancún, Playa del Carmen y Chetumal. </li>
-            </ul>
-            </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>Ignite Store - Técnico</h4>
-            <p><em>Mérida, Yucatán</em></p>
-            <p>
-            <ul>
-              <li>Instalación de equipos de vigilancia CCTV, así como redes, en hoteles y negocios pequeños.</li>
-              <li>Mantenimiento preventivo y correctivo a equipos de cómputo (CPU's, Consolas de Videojuegos, 
-                Celulares, etc..).</li>
-              <li>Asesoría y Soporte Técnico a Clientes incluida atención personalizada si lo requería </li>
-              <li>Ensamblado de equipos de cómputo tanto de oficina como especiales para diseño 
-                  gráfico, gaming, etc. </li>
-              <li>Reparación de equipos de cómputo en general.</li>
-              <li>Venta de hardware de cómputo.</li>
-              <li>Mantenimiento y reparación de garantías 
-                para equipos portátiles, cómputo y telefonía, así como inventario de productos y piezas Lanix. </li>
+            <ul id="description">
+              <!-- Se agrega todo la descripcion del trabajo -->
             </ul>
             </p>
           </div>
@@ -625,14 +587,14 @@
           <div class="info-box">
             <i class="bx bx-envelope"></i>
             <h3>Contáctame</h3>
-            <p>quintalkenny@gmail.com</p>
+            <p id="email"></p>
           </div>
         </div>
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-phone-call"></i>
             <h3>Llámame</h3>
-            <p>+52 (991) 110 8334</p>
+            <p id="phone"></p>
           </div>
         </div>
       </div>
@@ -674,6 +636,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/content.js"></script>
 
 </body>
 

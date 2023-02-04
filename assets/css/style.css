@@ -19,7 +19,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background: #040404 var(--bg-image-url) top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -33,6 +33,7 @@ body::before {
   --blue-text-color: #1956ff;
   --bluelight-line-color: #0084ff;
   --blue-bg-color: #0044ff;
+  --bg-image-url: "";
 }
 
 .inicio-h1 {
